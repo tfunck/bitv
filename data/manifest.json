@@ -1,0 +1,8 @@
+{
+  "title": "Stella Tenebris",
+  "stamp": "REV 5",
+  "bodies": ["ekluo.md", "legon.md", "klastos.md", "the-dream.md", "progonos.md", "the-deep.md"],
+  "factions": "factions.md",
+  "npcs": "npcs.md",
+  "rules": "rules.md"
+}
