@@ -149,6 +149,7 @@
 <nav class="tabs" role="tablist">
   <button id="tab-chart" class="on" role="tab">Chart</button>
   <button id="tab-rules" role="tab">Rules</button>
+  <button id="tab-tags" role="tab">Tags</button>
   <button id="tab-npcs" role="tab">Dossier</button>
 </nav>
 
@@ -184,6 +185,11 @@
   <section id="view-rules" class="view">
     <div class="toc" id="rules-toc"></div>
     <div class="doc" id="rules-doc"></div>
+  </section>
+
+  <section id="view-tags" class="view">
+    <div class="toc" id="tags-toc"></div>
+    <div class="doc" id="tags-doc"></div>
   </section>
 
   <section id="view-npcs" class="view">
@@ -620,16 +626,34 @@ function buildNpcs(){
     wrap.appendChild(row);
   });
 }
-function buildRules(md){
-  const doc=$("rules-doc");
+function buildDoc(md,docId,tocId,pfx){
+  const doc=$(docId);
   doc.innerHTML=marked.parse(md);
-  const toc=$("rules-toc");
+  const toc=$(tocId);
+  toc.innerHTML="";
   doc.querySelectorAll("h2").forEach((h,i)=>{
-    h.id="r-"+i;
+    h.id=pfx+i;
     const a=document.createElement("a");
-    a.href="#r-"+i;a.textContent=h.textContent.replace(/\s*\(.*\)$/,"");
+    a.href="#"+pfx+i;a.textContent=h.textContent.replace(/\s*\(.*\)$/,"");
     toc.appendChild(a);
   });
+}
+function buildRules(md){
+  const startMark="### Past Trademarks";
+  const endMark="## 2. The Action Roll";
+  const si=md.indexOf(startMark), ei=md.indexOf(endMark);
+  if(si>=0&&ei>si){
+    let tags=md.slice(si,ei).replace(/\s*-{3,}\s*$/,"").trim();
+    tags=tags.replace(/^### (Past|Present|Perk) Trademarks/gm,"## $1 Trademarks");
+    const intro="# Character Tags\n\nThe trademark catalog for character creation. "+
+      "Choose one Past, one Present, and one Perk trademark (see the Rules, section 1). "+
+      "The listed edges and flaws are prompts, not a fixed list.\n\n";
+    buildDoc(intro+tags,"tags-doc","tags-toc","t-");
+    md=md.slice(0,si)+
+      "_The Past, Present, and Perk trademark lists have moved to the **Tags** page._\n\n---\n\n"+
+      md.slice(ei);
+  }
+  buildDoc(md,"rules-doc","rules-toc","r-");
 }
 
 /* ---------- tabs ---------- */
@@ -638,7 +662,7 @@ function showTab(v){
   document.querySelectorAll(".view").forEach(s=>s.classList.remove("on"));
   $("tab-"+v).classList.add("on");$("view-"+v).classList.add("on");
 }
-["chart","rules","npcs"].forEach(v=>$("tab-"+v).addEventListener("click",()=>showTab(v)));
+["chart","rules","tags","npcs"].forEach(v=>$("tab-"+v).addEventListener("click",()=>showTab(v)));
 
 /* ---------- load ---------- */
 async function fetchText(path){

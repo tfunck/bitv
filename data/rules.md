@@ -1,4 +1,4 @@
-# Hard Burn (working title)
+# Blades in the Void
 
 System reference document. Draft 2.
 
@@ -9,7 +9,7 @@ System reference document. Draft 2.
 A character has:
 
 - **Trademarks**: broad descriptors, one from each category below. A **Past** trademark is what the character did before joining the crew. A **Present** trademark is the role they play on jobs. A **Perk** trademark is a notable advantage: an ability, quality, possession, or place.
-- **Edges**: narrow specialties tied to a trademark.
+- **Edges**: narrow specialties tied to a trademark. Each edge is associated with a given trademark.
 - **Flaws**: descriptors that cause trouble.
 - **3 hit boxes** (section 7).
 - **8 stress boxes** (section 8).
@@ -18,21 +18,21 @@ A character has:
 
 The suggested edges and flaws are prompts, not a defined skill list. Interpret them through the character.
 
-One flaw is the character's **vice**, marked on the sheet. A vice must be an indulgence: something the character does for relief, not a circumstance. *Owes the Union* cannot be a vice. *Drinks on the Job* can. Common vices: drink, stims, gambling, the feeds, luxury, devotion.
+One flaw is the character's **vice**, marked on the sheet. A vice must be an indulgence: something the character does for relief. *Owes the Union* cannot be a vice. *Drinks to forget* can. Common vices: drink, stims, gambling, the feeds, luxury, devotion.
 
 ### Past Trademarks
 
-What the character did before joining the crew. A Past trademark applies whenever that training, those habits, or those contacts are relevant. Past work doesn't stop being useful: a former pilot still flies.
+What the character did before joining the crew. A Past trademark applies whenever that training, those habits, or those contacts are relevant. 
 
 **Advocate**
 You practiced law: company counsel, colonial courts, public defense.
-*Edges*: contracts, court procedure, cross-examination, making a deal, citing precedent, finding the loophole.
-*Flaws*: disbarred, in a syndicate's pocket, soft-hearted, everyone hates lawyers.
+*Edges*: contracts, court procedure, cross-examination, making a deal, finding the loophole.
+*Flaws*: disbarred, in a syndicate's pocket, everyone hates lawyers.
 
 **Chaplain**
 You tended souls: void missions, station parishes, hospital wards.
 *Edges*: last rites, counsel, a congregation in every port, scripture, calming a crowd, hearing confessions.
-*Flaws*: doubt, defrocked, keeps other people's secrets, tithes owed.
+*Flaws*: doubt, defrocked, zealous 
 
 **Company Spook**
 You did intelligence work for a corporation or a government.
@@ -52,7 +52,7 @@ You did time: company pens, labor colonies, prison hulks.
 **Corporate**
 You worked the office side: management, finance, compliance.
 *Edges*: contracts, bureaucracy, reading an org chart, boardroom manners, expense accounts, finding the loophole.
-*Flaws*: non-compete clause, soft hands, name on old paperwork, still thinks like the company.
+*Flaws*: non-compete clause, soft hands,  still thinks like the company.
 
 **Cult Survivor**
 You got out of one of the void churches. Mostly.
@@ -62,7 +62,7 @@ You got out of one of the void churches. Mostly.
 **Dockhand**
 You worked the docks and freight decks.
 *Edges*: cargo handling, loaders and cranes, rigging and lashing, union contacts, brawling, knowing what's in the crates.
-*Flaws*: drinks on the job, a ruined back, owes the union, quick fists.
+*Flaws*: drinks on the job, a ruined back, owes the union, quick to anger.
 
 **Drifter**
 You moved from station to station, working whatever came.
