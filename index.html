@@ -626,9 +626,9 @@ function buildNpcs(){
     wrap.appendChild(row);
   });
 }
-function buildDoc(md,docId,tocId,pfx){
+function buildDoc(md,docId,tocId,pfx,opts){
   const doc=$(docId);
-  doc.innerHTML=marked.parse(md);
+  doc.innerHTML=marked.parse(md,opts||{});
   const toc=$(tocId);
   toc.innerHTML="";
   doc.querySelectorAll("h2").forEach((h,i)=>{
@@ -639,21 +639,10 @@ function buildDoc(md,docId,tocId,pfx){
   });
 }
 function buildRules(md){
-  const startMark="### Past Trademarks";
-  const endMark="## 2. The Action Roll";
-  const si=md.indexOf(startMark), ei=md.indexOf(endMark);
-  if(si>=0&&ei>si){
-    let tags=md.slice(si,ei).replace(/\s*-{3,}\s*$/,"").trim();
-    tags=tags.replace(/^### (Past|Present|Perk) Trademarks/gm,"## $1 Trademarks");
-    const intro="# Character Tags\n\nThe trademark catalog for character creation. "+
-      "Choose one Past, one Present, and one Perk trademark (see the Rules, section 1). "+
-      "The listed edges and flaws are prompts, not a fixed list.\n\n";
-    buildDoc(intro+tags,"tags-doc","tags-toc","t-");
-    md=md.slice(0,si)+
-      "_The Past, Present, and Perk trademark lists have moved to the **Tags** page._\n\n---\n\n"+
-      md.slice(ei);
-  }
   buildDoc(md,"rules-doc","rules-toc","r-");
+}
+function buildTags(md){
+  buildDoc(md,"tags-doc","tags-toc","t-",{breaks:true});
 }
 
 /* ---------- tabs ---------- */
@@ -698,6 +687,7 @@ async function fetchText(path){
     buildNameIndex();
     buildChart();buildRegister();buildWheel();buildNpcs();
     buildRules(await fetchText("data/"+manifest.rules));
+    buildTags(await fetchText("data/"+manifest.tags));
   }catch(err){
     document.querySelector("main").innerHTML=
       `<div class="err"><b>DATA FILES NOT FOUND.</b><br><br>`+
