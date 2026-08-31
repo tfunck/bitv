@@ -5,7 +5,7 @@ Order in this file is the order on the site. Header format:
 
 Relations run -2 (war) to +2 (allied). Define each pair once, on either faction's line. A 0 means the factions deal with each other regularly but neutrally; leave a pair out entirely if they don't interact. The relations below are placeholders except STPA-Clankers (the blockade): tune them.
 
-## Stella Tenebris Planetary Authority | short: STPA | tier: V | relations: Clankers -2, Mithril +1, Mindful 0
+## Stella Tenebris Planetary Authority | short: STPA | tier: V | relations: Clankers +2, Mithril +1, Mindful 0
 
 The system's military and civil authority. Maintains the blockade of The Deep.
 
