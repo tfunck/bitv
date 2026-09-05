@@ -26,11 +26,18 @@ Aloof, guarded in their motives. They scour the planets of the system and carefu
 ## 43 | short: Clankers | tier: III
 
 Department of Public Safety is the security force in Stella Tenebris. Staffed by androids. Referred to as the "Clankers" by most.
-*Edges: incorruptible, tireless. 
-*Flaws: bad aim, mismatched and outdated tech
-*Goal: maintain public order
+
+* Edges: incorruptible, tireless. 
+* Flaws: bad aim, mismatched and outdated tech
+* Goal: maintain public order
 
 
 ## Battle Group | short: BG | tier: I | relations: Mouthbreathers -1
+Current and former prize fighters. Gambling, protection, fight promotion. Redistribute some profits in the community. 
+
+* Edges: fisticuffs, flair for the dramatic 
+* Flaws: disorganized, loose lips
+* Goal: Local renown 
+* Notable NPCs: Atlas, head coach and gang leader
 
 ## Mouthbreathers | short: MB | tier: I
