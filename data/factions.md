@@ -21,11 +21,10 @@ Produces everything from children's toys to domestic appliances to advanced weap
 
 Aloof, guarded in their motives. They scour the planets of the system and carefully monitor the missives from Legon.
 
-## Omnicorp | short: Omnicorp | tier: IV
 
-## 43 | short: Clankers | tier: III
+## The Clankers | short: Clankers | tier: III
 
-Department of Public Safety is the security force in Stella Tenebris. Staffed by androids. Referred to as the "Clankers" by most.
+Officially called "Department of Public Safety" . It is the security force in Stella Tenebris. Staffed by androids. Referred to as the "Clankers" by most.
 
 * Edges: incorruptible, tireless. 
 * Flaws: bad aim, mismatched and outdated tech
