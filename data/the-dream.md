@@ -3,7 +3,7 @@ name: The Dream
 kind: station
 orbit: 2
 angle: 40
-factions: mithril, stpa
+factions: mithril, stpa, MB, BG, omnitech
 ---
 
 Klastos ore is refined by the proletariat of The Dream, all to the profit of Mithril Inc. For most, though not all, the reward is a pittance and the right to continue breathing stale air.
