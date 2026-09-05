@@ -9,22 +9,28 @@ Relations run -2 (war) to +2 (allied). Define each pair once, on either faction'
 
 The system's military and civil authority. Maintains the blockade of The Deep.
 
-## Mithril Inc | short: Mithril | tier: — | relations: Omnitech 0
+## Mithril Inc | short: Mithril | tier: IV | relations: Omnitech -1, Mindful -1
 
-Turns rock and sweat into good, old-fashioned profit, as corporations have done for centuries. Runs the Klastos mines and The Dream's refineries. Not on the official register.
+Turns rock and sweat into good, old-fashioned profit, as corporations have done for centuries. Runs the Klastos mines and The Dream's refineries.
 
-## Omnitech | short: Omnitech | tier: IV
+## Omnitech | short: Omnitech | tier: III | relations: 
 
 Produces everything from children's toys to domestic appliances to advanced weapons systems. Its presence in the system concerns only the latter.
 
-## Mindful | short: Mindful | tier: IV | relations: Omnitech -1
+## Mindful | short: Mindful | tier: III | relations: Omnitech +1
 
 Aloof, guarded in their motives. They scour the planets of the system and carefully monitor the missives from Legon.
 
 ## Omnicorp | short: Omnicorp | tier: IV
 
-## "Clankers" | short: Clankers | tier: III
+## 43 | short: Clankers | tier: III
 
-## Battle Group | short: BG | tier: I | relations: Mouthbreathers +2
+Department of Public Safety is the security force in Stella Tenebris. Staffed by androids. Referred to as the "Clankers" by most.
+*Edges: incorruptible, tireless. 
+*Flaws: bad aim, mismatched and outdated tech
+*Goal: maintain public order
+
+
+## Battle Group | short: BG | tier: I | relations: Mouthbreathers -1
 
 ## Mouthbreathers | short: MB | tier: I
